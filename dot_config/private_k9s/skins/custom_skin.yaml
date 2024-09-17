@@ -1,0 +1,75 @@
+# $XDG_CONFIG_HOME/k9s/everforest_skin.yaml
+k9s:
+  # General K9s styles
+  body:
+    fgColor: '#D3C6AA'     # Main text color (fg)
+    bgColor: '#2D353B'     # Background color (bg0)
+    logoColor: '#7FBBB3'   # Logo color (blue)
+
+  # ClusterInfoView styles
+  info:
+    fgColor: '#A7C080'     # Green for cluster info text (green)
+    sectionColor: '#7FBBB3' # Blue for section titles (blue)
+
+  # Frame styles
+  frame:
+    # Borders styles
+    border:
+      fgColor: '#9DA9A0'   # Grey2 for borders (grey2)
+      focusColor: '#7FBBB3' # Blue for focused borders (blue)
+
+    # MenuView attributes and styles
+    menu:
+      fgColor: '#859289'      # Grey1 for menu text (grey1)
+      keyColor: '#7FBBB3'     # Blue for menu keys (blue)
+      numKeyColor: '#A7C080'  # Green for favorite namespaces (green)
+
+    # CrumbView attributes for history navigation.
+    crumbs:
+      fgColor: '#D3C6AA'      # Foreground color (fg)
+      bgColor: '#3D484D'      # Background color for crumbs (bg2)
+      activeColor: '#83C092'  # Aqua for active crumb (aqua)
+
+    # Resource status and update styles
+    status:
+      newColor: '#A7C080'       # Green for new resources (green)
+      modifyColor: '#E69875'    # Orange for modified resources (orange)
+      addColor: '#83C092'       # Aqua for added resources (aqua)
+      errorColor: '#E67E80'     # Red for errors (red)
+      highlightColor: '#7FBBB3' # Blue for highlights (blue)
+      killColor: '#543A48'      # Dark for killed processes (bg_visual)
+      completedColor: '#4F585E' # Grey for completed resources (bg4)
+
+    # Border title styles.
+    title:
+      fgColor: '#A7C080'       # Green for title text (green)
+      bgColor: '#2D353B'       # Background color (bg0)
+      highlightColor: '#7FBBB3' # Blue for highlighted title (blue)
+      counterColor: '#DBBC7F'  # Yellow for counters (yellow)
+      filterColor: '#9DA9A0'   # Grey2 for filters (grey2)
+
+  # Specific views styles
+  views:
+    # TableView attributes.
+    table:
+      fgColor: '#D3C6AA'      # Foreground color (fg)
+      bgColor: '#2D353B'      # Background color (bg0)
+      cursorColor: '#83C092'  # Aqua for cursor (aqua)
+
+      # Header row styles.
+      header:
+        fgColor: '#D3C6AA'     # Foreground color (fg)
+        bgColor: '#3D484D'     # Background color for header (bg2)
+        sorterColor: '#DBBC7F' # Yellow for sorter (yellow)
+
+    # YAML info styles.
+    yaml:
+      keyColor: '#A7C080'      # Green for YAML keys (green)
+      colonColor: '#7FBBB3'    # Blue for colons (blue)
+      valueColor: '#D3C6AA'    # Foreground for values (fg)
+
+    # Logs styles.
+    logs:
+      fgColor: '#D3C6AA'       # Foreground color (fg)
+      bgColor: '#232A2E'       # Dim background (bg_dim)
+

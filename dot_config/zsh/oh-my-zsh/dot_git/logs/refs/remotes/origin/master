@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 7ef3f49f97ff34db3785b1cea444eb4972b1937b Samuel Recker <samox@fedora.(none)> 1713355768 +0200	fetch --depth=1 origin: storing head
+7ef3f49f97ff34db3785b1cea444eb4972b1937b 803e1a784cd520f101d126b47deea3297e6a82fc Samuel Recker <samuel.recker@gmail.com> 1714464613 +0200	pull --quiet --rebase origin master: fast-forward
+803e1a784cd520f101d126b47deea3297e6a82fc b1c5315a5fbc33624525e434ddbaec3bb30030e2 Samuel Recker <samuel.recker@gmail.com> 1715584853 +0200	pull --quiet --rebase origin master: fast-forward
+b1c5315a5fbc33624525e434ddbaec3bb30030e2 5e59d21e5465ec0694441f41ff0acf1ddf4de187 Samuel Recker <samuel.recker@gmail.com> 1716794973 +0200	pull --quiet --rebase origin master: fast-forward
+5e59d21e5465ec0694441f41ff0acf1ddf4de187 677f5010daf226509cc19d7244a689df82820c82 Samuel Recker <samuel.recker@gmail.com> 1718648186 +0200	pull --quiet --rebase origin master: fast-forward
+677f5010daf226509cc19d7244a689df82820c82 5b37e218e5275c11cb5fecc61f943e6cea3e64bf Samuel Recker <samuel.recker@gmail.com> 1720687009 +0200	pull --quiet --rebase origin master: fast-forward
+5b37e218e5275c11cb5fecc61f943e6cea3e64bf 0ffcc3b68a1196e9164ff42fac8a5fdd4804abd0 Samuel Recker <samuel.recker@gmail.com> 1723106264 +0200	pull --quiet --rebase origin master: fast-forward
+0ffcc3b68a1196e9164ff42fac8a5fdd4804abd0 ebb479e5e2395d26fc368c9b9d534e935a292740 Samuel Recker <samuel.recker@gmail.com> 1724318394 +0200	pull --quiet --rebase origin master: fast-forward
+ebb479e5e2395d26fc368c9b9d534e935a292740 f6cd6a776993b584f4abbdd204c6e4011b7d2f93 Samuel Recker <samuel.recker@gmail.com> 1726235299 +0200	pull --quiet --rebase origin master: fast-forward

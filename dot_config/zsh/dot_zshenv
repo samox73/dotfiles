@@ -1,0 +1,2 @@
+export ZSH_COMPDUMP=$HOME/.cache/.zcompdump-$HOST
+source $ZDOTDIR/zshrc

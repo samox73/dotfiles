@@ -1,0 +1,86 @@
+: 1726237426:0;cd work
+: 1726237455:0;prompt -l
+: 1726238340:0;sudo pacman -S z
+: 1726238349:0;sudo pacman -Rsn z
+: 1726238594:0;cd .config/zsh
+: 1726238599:0;cd .zprezto
+: 1726238649:0;ll modules
+: 1726238668:0;git clone https://github.com/agkozak/zsh-z.git $ZPREZTODIR/modules/zsh-z
+: 1726238680:0;z skynet
+: 1726238942:0;history
+: 1726239001:0;cd
+: 1726239056:0;vim .zpreztorc
+: 1726239067:0;nvim .zpreztorc
+: 1726239093:0;nvim zshrc.bak
+: 1726239112:0;sudo pacman -S atuin
+: 1726239153:0;cd shells
+: 1726239156:0;cat aliases.sh
+: 1726239178:0;echo $ZPREZTODIR
+: 1726239199:0;echo $ZDOTDIR
+: 1726239293:0;mv aliases.sh ~/.config/zsh/
+: 1726239346:0;cat zsh/custom_zshrc
+: 1726239397:0;mv envrc.sh ~/.config/zsh/env.sh
+: 1726239421:0;vimenvrc
+: 1726239465:0;ll bash/scripts
+: 1726239503:0;ll k8s.sh
+: 1726239506:0;cat k8s.sh
+: 1726239514:0;rm k8s.sh
+: 1726239518:0;vim powerbot.sh
+: 1726239522:0;rm powerbot.sh
+: 1726239526:0;ll zsh
+: 1726239528:0;ll zsh/completions
+: 1726239531:0;ll zsh/completions/completions.sh
+: 1726239534:0;vim zsh/completions/completions.sh
+: 1726239690:0;curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+: 1726239789:0;poweroff
+: 1726468980:0;work
+: 1726469036:0;ll /usr/share/fzf/key-bindings.zsh
+: 1726469581:0;vimalacritty
+: 1726469794:0;atuin
+: 1726469807:0;whereis atuin
+: 1726469894:0;vim $ZPREZTODIR/../.zpreztorc
+: 1726469911:0;vim .atuin/bin/env
+: 1726469927:0;atuin init zsh --disable-up-arrow
+: 1726470135:0;vim zshrc.bak
+: 1726470162:0;cp zshrc.bak .zshrc
+: 1726470184:0;vim .zshenv
+: 1726470232:0;mv .zshrc $ZDOTDIR/zshrc
+: 1726470235:0;cd $ZDOTDIR
+: 1726470283:0;rm .zshrc
+: 1726470349:0;setopt EXTENDED_GLOB\
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do\
+  rm "$rcfile"done
+: 1726470352:0;B\
+
+: 1726470369:0;setopt EXTENDED_GLOB\
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do\
+  rm "$rcfile"\
+done
+: 1726470381:0;setopt EXTENDED_GLOB
+: 1726470383:0;for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do\
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+: 1726470390:0;setopt EXTENDED_GLOB\
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do\
+  rm "${ZDOTDIR:-$HOME}/.${rcfile:t}"\
+done
+: 1726470434:0;la
+: 1726470439:0;la ~/
+: 1726470459:0;la ~/ | grep .z
+: 1726470494:0;vim zshrc
+: 1726470525:0;vim ~/.zenv
+: 1726470537:0;vim ~/.zshenv
+: 1726470566:0;mv zshrc .zshrc
+: 1726470618:0;vimaliases
+: 1726470680:0;cd .config
+: 1726470684:0;cd zsh
+: 1726470732:0;cp ../../.config_custom/shells/zsh/custom_zshrc .
+: 1726470803:0;vim .zshrc
+: 1726470819:0;pwd
+: 1726470857:0;ll
+: 1726470864:0;vim custom_zshrc
+: 1726470908:0;exit
+: 1726489576:0;go run main.go
+: 1726489583:0;cd ..
+: 1726489584:0;ll
+: 1726489586:0;la
+: 1726489593:0;ll http-checker

@@ -7,7 +7,7 @@ alias suspend="systemctl suspend"
 
 alias vimrc="vim ~/.config/nvim/init.lua"
 alias vimzrc="vim ~/.config/zsh/custom_zshrc"
-alias rldzshrc=". ~/.zshrc"
+alias rldzshrc=". ~/.zshenv"
 alias vimsway="vim ~/.config/sway/config"
 alias vimenvrc="vim ~/.config/zsh/env.sh"
 alias vimaliases="vim ~/.config/zsh/aliases.sh"
@@ -15,6 +15,7 @@ alias vimalacritty="vim ~/.config/alacritty/alacritty.toml"
 alias vimzshconfig="vim ~/.config/zsh/.zshrc"
 alias vimohmyzsh="vim ~/.oh-my-zsh"
 alias vimwaybar="vim ~/.config/waybar/style.css"
+alias gti="git"
 
 alias c="wl-copy"
 alias v="xclip -o"
@@ -29,8 +30,10 @@ alias k="kubectl"
 function work() {
   swaymsg output eDP-1 disable
   monitor=$(swaymsg -t get_outputs | jq -r '. | map(select(.name | test("^DP-\\d"))) | .[0].name')
+  echo "$monitor mode 2560x1440 position 0 560"
   swaymsg output $monitor mode 2560x1440 position 0 560
   monitor=$(swaymsg -t get_outputs | jq -r '. | map(select(.name | test("^DP-\\d"))) | .[1].name')
+  echo "$monitor mode 2560x1440 position 2560 0 transform 90"
   swaymsg output $monitor mode 2560x1440 position 2560 0 transform 90
 }
 
@@ -55,3 +58,5 @@ function standing() {
 }
 
 alias vim="nvim"
+alias zd='cd "$(fd -t dir | fzf)"'
+alias zdh='cd "$(fd -t dir -H | fzf)"'

@@ -1,7 +1,7 @@
 /* waybar style.css */
 @define-color bgcolor #2D353B;	/* background color */
 @define-color bgcolor2 #B89069;	/* background color */
-@define-color fgcolor #A7C080;  /* foreground color */
+@define-color fgcolor #D3C6AA;  /* foreground color */
 @define-color fgcolor2 #ffaec5;  /* foreground color */
 @define-color charging #1F5748; /* battery charging color */
 @define-color plugged #acfcad;  /* ac plugged color */

@@ -132,5 +132,4 @@ setopt correct
 
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh --disable-up-arrow)"
-
 eval "$(dircolors $HOME/.config/zsh/dircolors.everforest)"

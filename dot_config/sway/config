@@ -46,11 +46,16 @@ bindsym Mod1+Shift+Down move down
 bindsym Mod1+Shift+Up move up
 bindsym Mod1+Shift+Right move right
 
+# move whole workspace to other monitor
+bindsym Mod1+Control+Shift+Right move workspace to output right
+bindsym Mod1+Control+Shift+Left move workspace to output left
+
 # open app picker
 bindsym Mod1+space exec --no-startup-id rofi -modi combi -show combi -combi-modi drun,run -no-levenshtein-sort
 
 # open workspace picker
-bindsym Mod1+ctrl+shift+x exec sway-switch-workspace
+bindsym ctrl+shift+x exec sway-switch-workspace
+bindsym Mod1+ctrl+shift+x exec sway-move-to-workspace
 
 # open clipboard manager
 bindsym Mod1+Ctrl+Shift+C exec "clipman pick -t rofi"
@@ -142,20 +147,19 @@ mode "resize" {
 
 set $borderf #dce6cc
 set $borderuf #A7C080
-set $bordersplit #ffc3aa
 
-client.focused #ffffff $borderf #fdf6e3 $bordersplit
-client.focused_inactive #ffffff $borderuf #eee8d5 $bordersplit
-client.unfocused #073642 $borderuf #93a1a1 $bordersplit
+client.focused #ffffff $borderf #fdf6e3 $borderf
+client.focused_inactive #ffffff $borderuf #eee8d5 $borderuf
+client.unfocused #073642 $borderuf #93a1a1 $borderuf
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
 
 exec {
     waybar
+    swayidle
 }
 
 exec_always {
     wl-paste -t text --watch clipman store
-    swayidle
     dunst
 }
 

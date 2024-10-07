@@ -1,0 +1,9 @@
+profile home {
+  output "Samsung Electric Company LC27G7xT H4ZR701769" mode 2560x1440 position 1920,0
+  output "Acer Technologies Acer KG271 0x74404006" mode 1920x1080 position 0,180
+}
+
+profile work {
+  #output "Acer Technologies Acer KG271 0x74404006" mode 2560x1440 position 0,0
+  #output "Samsung Electric Company LC27G7xT H4ZR701769" mode 2560x1440 position 2560,0
+}

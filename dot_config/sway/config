@@ -159,6 +159,7 @@ exec {
 }
 
 exec_always {
+    pkill kanshi; kanshi
     wl-paste -t text --watch clipman store
     dunst
 }
@@ -189,9 +190,6 @@ bindsym XF86MonBrightnessDown exec lxqt-backlight_backend --dec 10 %
 # lockscreen
 bindsym Ctrl+Shift+F8 exec swaylock
 
-set $display1 DP-3
-set $display2 DP-5
-
 input type:keyboard {
     repeat_delay 200
     repeat_rate 100
@@ -208,19 +206,6 @@ input type:touchpad {
 
 input type:pointer {
     scroll_factor 1
-}
-
-output $display1 {
-  mode 2560x1440
-  position 0 560
-  dpms on
-}
-
-output $display2 {
-  mode 2560x1440
-  position 2560 0
-  dpms on
-  transform 90
 }
 
 output "*" bg ~/work/repos/everforest-walls/nature/polyscape_2.png fill

@@ -12,10 +12,11 @@ alias vimsway="vim ~/.config/sway/config"
 alias vimenvrc="vim ~/.config/zsh/env.sh"
 alias vimaliases="vim ~/.config/zsh/aliases.sh"
 alias vimalacritty="vim ~/.config/alacritty/alacritty.toml"
-alias vimzshconfig="vim ~/.config/zsh/.zshrc"
+alias vimzshconfig="vim ~/.config/zsh/zshrc"
 alias vimohmyzsh="vim ~/.oh-my-zsh"
 alias vimwaybar="vim ~/.config/waybar/style.css"
 alias gti="git"
+alias git-clean="git remote prune origin && git branch -vv | grep -E \"\[origin.*: gone\]\" | awk \"{ print \$1; }\" | xargs git branch -D"
 
 alias c="wl-copy"
 alias v="xclip -o"
@@ -35,6 +36,16 @@ function work() {
   monitor=$(swaymsg -t get_outputs | jq -r '. | map(select(.name | test("^DP-\\d"))) | .[1].name')
   echo "$monitor mode 2560x1440 position 2560 0 transform 90"
   swaymsg output $monitor mode 2560x1440 position 2560 0 transform 90
+}
+
+function work-flat() {
+  swaymsg output eDP-1 disable
+  monitor=$(swaymsg -t get_outputs | jq -r '. | map(select(.name | test("^DP-\\d"))) | .[0].name')
+  echo "$monitor mode 2560x1440 position 0 0 transform 90"
+  swaymsg output $monitor mode 2560x1440 position 2560 0 transform 90
+  monitor=$(swaymsg -t get_outputs | jq -r '. | map(select(.name | test("^DP-\\d"))) | .[1].name')
+  echo "$monitor mode 2560x1440 position 2560 0 transform 0"
+  swaymsg output $monitor mode 2560x1440 position 0 560
 }
 
 function laptop() {

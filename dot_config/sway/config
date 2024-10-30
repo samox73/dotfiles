@@ -159,9 +159,9 @@ exec {
 }
 
 exec_always {
-    pkill kanshi; kanshi
     wl-paste -t text --watch clipman store
     dunst
+    pkill kanshi; kanshi
 }
 
 bindsym Mod1+i exec "firefox -P work"

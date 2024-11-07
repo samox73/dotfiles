@@ -4,6 +4,7 @@ profile home {
 }
 
 profile work {
-  #output "Acer Technologies Acer KG271 0x74404006" mode 2560x1440 position 0,0
-  #output "Samsung Electric Company LC27G7xT H4ZR701769" mode 2560x1440 position 2560,0
+  output "Dell Inc. DELL P2723DE 9CMD714" mode 2560x1440 position 0,180
+  output "Dell Inc. DELL P2723DE 6FXC714" mode 2560x1440 position 2560,0 transform 270
+  output "eDP-1" disable
 }

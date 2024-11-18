@@ -1,12 +1,9 @@
-// waybar config
-// 111121
-
 {
   "height": 25,
   "layer": "top",
   "position": "top",
   "modules-left": ["cpu", "temperature", "memory", "battery", "disk", "pulseaudio"],
-  "modules-center": ["sway/workspaces"],
+  "modules-center": ["sway/mode","sway/workspaces","sway/mode"],
   "modules-right": ["custom/weather", "network", "clock"],
   "sway/window": { },
 "custom/weather": {
@@ -119,5 +116,8 @@
 "custom/cap-right": {
   "tooltip": false,
 	"format": "",
+},
+"sway/mode": {
+    "format": "{}"
 },
 }

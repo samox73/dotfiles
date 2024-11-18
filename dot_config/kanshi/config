@@ -4,7 +4,13 @@ profile home {
 }
 
 profile work {
-  output "Dell Inc. DELL P2723DE 9CMD714" mode 2560x1440 position 0,180
+  output "Dell Inc. DELL P2723DE 9CMD714" mode 2560x1440 position 0,560
   output "Dell Inc. DELL P2723DE 6FXC714" mode 2560x1440 position 2560,0 transform 270
+  output "eDP-1" disable
+}
+
+profile work-standing {
+  output "Dell Inc. DELL P2723DE CK02VZ3" mode 2560x1440 position 0,0
+  output "Dell Inc. DELL P2723DE 48PJWY3" mode 2560x1440 position 2560,0
   output "eDP-1" disable
 }

@@ -1,0 +1,18 @@
+PATH=$PATH:/usr/share/texmf-dist
+PATH=$PATH:$HOME/.cargo/bin
+PATH=$PATH:$HOME/.local/bin
+PATH=$PATH:$HOME/.config/zsh/cmds
+PATH="$PATH:${KREW_ROOT:-$HOME/.krew}/bin"
+PATH=$PATH:$HOME/go/bin
+PATH=$PATH:$HOME/.pulumi/bin
+export PATH
+
+export CLICOLOR=1
+export EDITOR=nvim
+export SYSTEMD_EDITOR=nvim
+export GOPATH="$HOME/go"
+
+export ZSH_COMPDUMP=$HOME/.cache/.zcompdump-$HOST
+. "$HOME/.cargo/env"
+. "$HOME/.atuin/bin/env"
+source $ZDOTDIR/zshrc

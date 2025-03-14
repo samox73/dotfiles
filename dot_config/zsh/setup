@@ -4,6 +4,5 @@ if ! type rustc > /dev/null; then
 fi
 
 if [[ ! -d $XDG_CONFIG_HOME/nvim ]]; then
-  git clone git@github.com:samox73/nvim.git $XDG_CONFIG_HOME/nvim
+  git clone https://github.com/samox73/nvim.git $XDG_CONFIG_HOME/nvim
 fi
-
